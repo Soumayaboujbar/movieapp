@@ -3,6 +3,7 @@ import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import MovieList from "./MovieList";
 import Filter from "./Filter";
 import MovieDetails from "./MovieDetails";
+import UserList from "./UserList";  
 
 import inceptionImg from "./assets/inception.jpg";
 import interstellarImg from "./assets/interstellar.jpg";
@@ -64,6 +65,7 @@ function App() {
               path="/movie/:id"
               element={<MovieDetails movies={movies} />}
             />
+            <Route path="/users" element={<UserList />} /> 
           </Routes>
         </div>
       </div>
@@ -72,4 +74,5 @@ function App() {
 }
 
 export default App;
+
 
